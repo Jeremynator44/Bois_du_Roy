@@ -79,5 +79,10 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="img\istockphoto-475668157-612x612.jpg" />
+    <Content Include="img\pngtree-bright-wood-panel-background-with-long-shiny-planks-image_312839.jpg" />
+    <Content Include="img\Texture_Wooden_485232.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
