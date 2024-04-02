@@ -33,6 +33,9 @@
             this.btnConnexion = new System.Windows.Forms.Button();
             this.lbl_login = new System.Windows.Forms.Label();
             this.lbl_mdp = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_entete = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBoxLogin
@@ -40,9 +43,9 @@
             this.textBoxLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxLogin.Location = new System.Drawing.Point(295, 162);
+            this.textBoxLogin.Location = new System.Drawing.Point(346, 228);
             this.textBoxLogin.Name = "textBoxLogin";
-            this.textBoxLogin.Size = new System.Drawing.Size(363, 20);
+            this.textBoxLogin.Size = new System.Drawing.Size(271, 20);
             this.textBoxLogin.TabIndex = 0;
             // 
             // textBoxMdp
@@ -50,26 +53,26 @@
             this.textBoxMdp.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxMdp.Location = new System.Drawing.Point(295, 225);
+            this.textBoxMdp.Location = new System.Drawing.Point(346, 291);
             this.textBoxMdp.Name = "textBoxMdp";
-            this.textBoxMdp.Size = new System.Drawing.Size(363, 20);
+            this.textBoxMdp.Size = new System.Drawing.Size(271, 20);
             this.textBoxMdp.TabIndex = 1;
+            this.textBoxMdp.UseSystemPasswordChar = true;
             // 
             // btnConnexion
             // 
-            this.btnConnexion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnConnexion.BackColor = System.Drawing.Color.Peru;
+            this.btnConnexion.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnConnexion.BackColor = System.Drawing.Color.Black;
             this.btnConnexion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnConnexion.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
-            this.btnConnexion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Orange;
-            this.btnConnexion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
+            this.btnConnexion.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnConnexion.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnConnexion.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.WindowFrame;
             this.btnConnexion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConnexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConnexion.Location = new System.Drawing.Point(417, 287);
+            this.btnConnexion.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btnConnexion.Location = new System.Drawing.Point(430, 345);
             this.btnConnexion.Name = "btnConnexion";
-            this.btnConnexion.Size = new System.Drawing.Size(117, 43);
+            this.btnConnexion.Size = new System.Drawing.Size(98, 39);
             this.btnConnexion.TabIndex = 2;
             this.btnConnexion.Text = "Connexion";
             this.btnConnexion.UseVisualStyleBackColor = false;
@@ -80,7 +83,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_login.AutoSize = true;
-            this.lbl_login.Location = new System.Drawing.Point(221, 165);
+            this.lbl_login.Location = new System.Drawing.Point(272, 231);
             this.lbl_login.Name = "lbl_login";
             this.lbl_login.Size = new System.Drawing.Size(59, 13);
             this.lbl_login.TabIndex = 3;
@@ -92,18 +95,49 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_mdp.AutoSize = true;
-            this.lbl_mdp.Location = new System.Drawing.Point(211, 228);
+            this.lbl_mdp.Location = new System.Drawing.Point(262, 294);
             this.lbl_mdp.Name = "lbl_mdp";
             this.lbl_mdp.Size = new System.Drawing.Size(78, 13);
             this.lbl_mdp.TabIndex = 4;
             this.lbl_mdp.Text = "Mot de Passe :";
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(362, 141);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(218, 42);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Se connecter";
+            // 
+            // lbl_entete
+            // 
+            this.lbl_entete.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lbl_entete.Location = new System.Drawing.Point(0, 0);
+            this.lbl_entete.Name = "lbl_entete";
+            this.lbl_entete.Size = new System.Drawing.Size(1829, 72);
+            this.lbl_entete.TabIndex = 6;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(38, 18);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(218, 42);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Bois du Roy";
             // 
             // Connexion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(956, 471);
+            this.ClientSize = new System.Drawing.Size(966, 480);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbl_entete);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lbl_mdp);
             this.Controls.Add(this.lbl_login);
             this.Controls.Add(this.btnConnexion);
@@ -111,7 +145,6 @@
             this.Controls.Add(this.textBoxLogin);
             this.Name = "Connexion";
             this.Text = "Connexion";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,6 +157,9 @@
         private System.Windows.Forms.Button btnConnexion;
         private System.Windows.Forms.Label lbl_login;
         private System.Windows.Forms.Label lbl_mdp;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_entete;
+        private System.Windows.Forms.Label label2;
     }
 }
 
