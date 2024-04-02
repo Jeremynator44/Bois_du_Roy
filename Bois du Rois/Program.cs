@@ -16,7 +16,11 @@ namespace Bois_du_Rois
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< Updated upstream
             Application.Run(new Connexion());
+=======
+            Application.Run(new Form_Accueil());
+>>>>>>> Stashed changes
         }
     }
 }
