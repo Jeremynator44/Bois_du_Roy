@@ -20,7 +20,7 @@ namespace Bois_du_Rois
             Application.Run(new Connexion());
 =======
             Application.Run(new Form_Accueil());
->>>>>>> Stashed changes
+>>>>>>> Stashed changes 
         }
     }
 }
