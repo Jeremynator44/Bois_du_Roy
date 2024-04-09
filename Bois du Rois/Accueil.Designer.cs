@@ -29,147 +29,299 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Accueil));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lbl_entete = new System.Windows.Forms.Label();
-            this.btn_NDF_Employés = new System.Windows.Forms.Button();
-            this.btn_Liste_Employés = new System.Windows.Forms.Button();
-            this.btn_Liste_Produits = new System.Windows.Forms.Button();
-            this.btn_Compte = new System.Windows.Forms.Button();
-            this.btn_Accueil = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.btn_ndf_employés = new System.Windows.Forms.Button();
+            this.btn_liste_employés = new System.Windows.Forms.Button();
+            this.btn_liste_produits = new System.Windows.Forms.Button();
+            this.lbl_msg_Bienvenue = new System.Windows.Forms.Label();
+            this.btn_accueil = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btn_ajout_fiche = new System.Windows.Forms.Button();
+            this.btn_copier = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btn_exporter = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btn_deconnexion = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_compte = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_menu = new System.Windows.Forms.Button();
+            this.MenuDeroulant = new System.Windows.Forms.FlowLayoutPanel();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel4.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // btn_ndf_employés
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.DimGray;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(258, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(123, 89);
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
+            this.btn_ndf_employés.BackColor = System.Drawing.Color.DimGray;
+            this.btn_ndf_employés.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btn_ndf_employés.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ndf_employés.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ndf_employés.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_ndf_employés.Location = new System.Drawing.Point(491, -1);
+            this.btn_ndf_employés.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_ndf_employés.Name = "btn_ndf_employés";
+            this.btn_ndf_employés.Size = new System.Drawing.Size(172, 89);
+            this.btn_ndf_employés.TabIndex = 18;
+            this.btn_ndf_employés.Text = "NDF Employés";
+            this.btn_ndf_employés.UseVisualStyleBackColor = false;
             // 
-            // lbl_entete
+            // btn_liste_employés
             // 
-            this.lbl_entete.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lbl_entete.Location = new System.Drawing.Point(0, 0);
-            this.lbl_entete.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_entete.Name = "lbl_entete";
-            this.lbl_entete.Size = new System.Drawing.Size(1307, 89);
-            this.lbl_entete.TabIndex = 9;
+            this.btn_liste_employés.BackColor = System.Drawing.Color.DimGray;
+            this.btn_liste_employés.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btn_liste_employés.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_liste_employés.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_liste_employés.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_liste_employés.Location = new System.Drawing.Point(696, -1);
+            this.btn_liste_employés.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_liste_employés.Name = "btn_liste_employés";
+            this.btn_liste_employés.Size = new System.Drawing.Size(163, 89);
+            this.btn_liste_employés.TabIndex = 19;
+            this.btn_liste_employés.Text = "Liste Employés";
+            this.btn_liste_employés.UseVisualStyleBackColor = false;
             // 
-            // btn_NDF_Employés
+            // btn_liste_produits
             // 
-            this.btn_NDF_Employés.BackColor = System.Drawing.Color.DimGray;
-            this.btn_NDF_Employés.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btn_NDF_Employés.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_NDF_Employés.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_NDF_Employés.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_NDF_Employés.Location = new System.Drawing.Point(448, 0);
-            this.btn_NDF_Employés.Name = "btn_NDF_Employés";
-            this.btn_NDF_Employés.Size = new System.Drawing.Size(199, 89);
-            this.btn_NDF_Employés.TabIndex = 18;
-            this.btn_NDF_Employés.Text = "NDF Employés";
-            this.btn_NDF_Employés.UseVisualStyleBackColor = false;
+            this.btn_liste_produits.BackColor = System.Drawing.Color.DimGray;
+            this.btn_liste_produits.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btn_liste_produits.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_liste_produits.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_liste_produits.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_liste_produits.Location = new System.Drawing.Point(901, -1);
+            this.btn_liste_produits.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_liste_produits.Name = "btn_liste_produits";
+            this.btn_liste_produits.Size = new System.Drawing.Size(149, 89);
+            this.btn_liste_produits.TabIndex = 20;
+            this.btn_liste_produits.Text = "Liste Produits";
+            this.btn_liste_produits.UseVisualStyleBackColor = false;
             // 
-            // btn_Liste_Employés
+            // lbl_msg_Bienvenue
             // 
-            this.btn_Liste_Employés.BackColor = System.Drawing.Color.DimGray;
-            this.btn_Liste_Employés.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btn_Liste_Employés.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Liste_Employés.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Liste_Employés.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_Liste_Employés.Location = new System.Drawing.Point(671, 0);
-            this.btn_Liste_Employés.Name = "btn_Liste_Employés";
-            this.btn_Liste_Employés.Size = new System.Drawing.Size(199, 89);
-            this.btn_Liste_Employés.TabIndex = 19;
-            this.btn_Liste_Employés.Text = "Liste Employés";
-            this.btn_Liste_Employés.UseVisualStyleBackColor = false;
+            this.lbl_msg_Bienvenue.AutoSize = true;
+            this.lbl_msg_Bienvenue.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_msg_Bienvenue.Location = new System.Drawing.Point(147, 115);
+            this.lbl_msg_Bienvenue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_msg_Bienvenue.Name = "lbl_msg_Bienvenue";
+            this.lbl_msg_Bienvenue.Size = new System.Drawing.Size(599, 46);
+            this.lbl_msg_Bienvenue.TabIndex = 23;
+            this.lbl_msg_Bienvenue.Text = "Bienvenue Jean-Durand (E435) !\r\n";
             // 
-            // btn_Liste_Produits
+            // btn_accueil
             // 
-            this.btn_Liste_Produits.BackColor = System.Drawing.Color.DimGray;
-            this.btn_Liste_Produits.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btn_Liste_Produits.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Liste_Produits.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Liste_Produits.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_Liste_Produits.Location = new System.Drawing.Point(892, 0);
-            this.btn_Liste_Produits.Name = "btn_Liste_Produits";
-            this.btn_Liste_Produits.Size = new System.Drawing.Size(199, 89);
-            this.btn_Liste_Produits.TabIndex = 20;
-            this.btn_Liste_Produits.Text = "Liste Produits";
-            this.btn_Liste_Produits.UseVisualStyleBackColor = false;
+            this.btn_accueil.BackColor = System.Drawing.Color.DimGray;
+            this.btn_accueil.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btn_accueil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_accueil.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_accueil.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_accueil.Location = new System.Drawing.Point(23, -1);
+            this.btn_accueil.Name = "btn_accueil";
+            this.btn_accueil.Size = new System.Drawing.Size(256, 89);
+            this.btn_accueil.TabIndex = 28;
+            this.btn_accueil.Text = "Bois du Roy";
+            this.btn_accueil.UseVisualStyleBackColor = false;
             // 
-            // btn_Compte
+            // pictureBox2
             // 
-            this.btn_Compte.BackColor = System.Drawing.Color.Black;
-            this.btn_Compte.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_Compte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Compte.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Compte.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_Compte.Location = new System.Drawing.Point(1108, 0);
-            this.btn_Compte.Name = "btn_Compte";
-            this.btn_Compte.Size = new System.Drawing.Size(199, 89);
-            this.btn_Compte.TabIndex = 21;
-            this.btn_Compte.Text = "Jean-Durand";
-            this.btn_Compte.UseVisualStyleBackColor = false;
+            this.pictureBox2.BackColor = System.Drawing.Color.DimGray;
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(258, -1);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(123, 89);
+            this.pictureBox2.TabIndex = 27;
+            this.pictureBox2.TabStop = false;
             // 
-            // btn_Accueil
+            // label2
             // 
-            this.btn_Accueil.BackColor = System.Drawing.Color.DimGray;
-            this.btn_Accueil.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btn_Accueil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Accueil.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Accueil.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_Accueil.Location = new System.Drawing.Point(31, 0);
-            this.btn_Accueil.Name = "btn_Accueil";
-            this.btn_Accueil.Size = new System.Drawing.Size(256, 89);
-            this.btn_Accueil.TabIndex = 22;
-            this.btn_Accueil.Text = "Bois du Roy";
-            this.btn_Accueil.UseVisualStyleBackColor = false;
+            this.label2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label2.Location = new System.Drawing.Point(0, -1);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(1307, 89);
+            this.label2.TabIndex = 26;
             // 
-            // label1
+            // btn_ajout_fiche
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(302, 144);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "label1";
+            this.btn_ajout_fiche.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.btn_ajout_fiche.FlatAppearance.BorderSize = 0;
+            this.btn_ajout_fiche.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ajout_fiche.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ajout_fiche.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_ajout_fiche.Location = new System.Drawing.Point(95, 212);
+            this.btn_ajout_fiche.Name = "btn_ajout_fiche";
+            this.btn_ajout_fiche.Size = new System.Drawing.Size(271, 42);
+            this.btn_ajout_fiche.TabIndex = 29;
+            this.btn_ajout_fiche.Text = "+ Ajouter une nouvelle fiche";
+            this.btn_ajout_fiche.UseVisualStyleBackColor = false;
+            // 
+            // btn_copier
+            // 
+            this.btn_copier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.btn_copier.FlatAppearance.BorderSize = 0;
+            this.btn_copier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_copier.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_copier.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_copier.Location = new System.Drawing.Point(408, 212);
+            this.btn_copier.Name = "btn_copier";
+            this.btn_copier.Size = new System.Drawing.Size(149, 42);
+            this.btn_copier.TabIndex = 30;
+            this.btn_copier.Text = "Copier";
+            this.btn_copier.UseVisualStyleBackColor = false;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(95, 260);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(1120, 383);
+            this.dataGridView1.TabIndex = 31;
+            // 
+            // btn_exporter
+            // 
+            this.btn_exporter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.btn_exporter.FlatAppearance.BorderSize = 0;
+            this.btn_exporter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_exporter.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_exporter.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_exporter.Location = new System.Drawing.Point(1066, 212);
+            this.btn_exporter.Name = "btn_exporter";
+            this.btn_exporter.Size = new System.Drawing.Size(149, 42);
+            this.btn_exporter.TabIndex = 32;
+            this.btn_exporter.Text = "Exporter";
+            this.btn_exporter.UseVisualStyleBackColor = false;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.btn_deconnexion);
+            this.panel4.Location = new System.Drawing.Point(1092, 173);
+            this.panel4.Margin = new System.Windows.Forms.Padding(0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(215, 74);
+            this.panel4.TabIndex = 36;
+            // 
+            // btn_deconnexion
+            // 
+            this.btn_deconnexion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btn_deconnexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.btn_deconnexion.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_deconnexion.Location = new System.Drawing.Point(-17, -6);
+            this.btn_deconnexion.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_deconnexion.Name = "btn_deconnexion";
+            this.btn_deconnexion.Size = new System.Drawing.Size(255, 85);
+            this.btn_deconnexion.TabIndex = 2;
+            this.btn_deconnexion.Text = "Déconnexion";
+            this.btn_deconnexion.UseVisualStyleBackColor = false;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btn_compte);
+            this.panel1.Location = new System.Drawing.Point(1092, 93);
+            this.panel1.Margin = new System.Windows.Forms.Padding(0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(215, 74);
+            this.panel1.TabIndex = 34;
+            // 
+            // btn_compte
+            // 
+            this.btn_compte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btn_compte.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.btn_compte.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_compte.Location = new System.Drawing.Point(-22, -6);
+            this.btn_compte.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_compte.Name = "btn_compte";
+            this.btn_compte.Size = new System.Drawing.Size(255, 85);
+            this.btn_compte.TabIndex = 2;
+            this.btn_compte.Text = "Compte";
+            this.btn_compte.UseVisualStyleBackColor = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btn_menu);
+            this.panel2.Location = new System.Drawing.Point(1092, -1);
+            this.panel2.Margin = new System.Windows.Forms.Padding(0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(215, 89);
+            this.panel2.TabIndex = 35;
+            // 
+            // btn_menu
+            // 
+            this.btn_menu.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_menu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.btn_menu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_menu.Location = new System.Drawing.Point(-17, -6);
+            this.btn_menu.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_menu.Name = "btn_menu";
+            this.btn_menu.Size = new System.Drawing.Size(255, 101);
+            this.btn_menu.TabIndex = 2;
+            this.btn_menu.Text = "Jean-Durand";
+            this.btn_menu.UseVisualStyleBackColor = false;
+            this.btn_menu.Click += new System.EventHandler(this.btn_menu_Click);
+            // 
+            // MenuDeroulant
+            // 
+            this.MenuDeroulant.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.MenuDeroulant.Location = new System.Drawing.Point(1092, -1);
+            this.MenuDeroulant.Margin = new System.Windows.Forms.Padding(0);
+            this.MenuDeroulant.Name = "MenuDeroulant";
+            this.MenuDeroulant.Size = new System.Drawing.Size(215, 248);
+            this.MenuDeroulant.TabIndex = 33;
             // 
             // Accueil
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1307, 610);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.btn_Accueil);
-            this.Controls.Add(this.btn_Compte);
-            this.Controls.Add(this.btn_Liste_Produits);
-            this.Controls.Add(this.btn_Liste_Employés);
-            this.Controls.Add(this.btn_NDF_Employés);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.lbl_entete);
+            this.ClientSize = new System.Drawing.Size(1307, 672);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.btn_exporter);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btn_copier);
+            this.Controls.Add(this.btn_ajout_fiche);
+            this.Controls.Add(this.btn_liste_produits);
+            this.Controls.Add(this.btn_liste_employés);
+            this.Controls.Add(this.btn_ndf_employés);
+            this.Controls.Add(this.btn_accueil);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbl_msg_Bienvenue);
+            this.Controls.Add(this.MenuDeroulant);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Accueil";
             this.Text = "Accueil";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label lbl_entete;
-        private System.Windows.Forms.Button btn_NDF_Employés;
-        private System.Windows.Forms.Button btn_Liste_Employés;
-        private System.Windows.Forms.Button btn_Liste_Produits;
-        private System.Windows.Forms.Button btn_Compte;
-        private System.Windows.Forms.Button btn_Accueil;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_ndf_employés;
+        private System.Windows.Forms.Button btn_liste_employés;
+        private System.Windows.Forms.Button btn_liste_produits;
+        private System.Windows.Forms.Label lbl_msg_Bienvenue;
+        private System.Windows.Forms.Button btn_accueil;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btn_ajout_fiche;
+        private System.Windows.Forms.Button btn_copier;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btn_exporter;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button btn_deconnexion;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btn_compte;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btn_menu;
+        private System.Windows.Forms.FlowLayoutPanel MenuDeroulant;
     }
 }
