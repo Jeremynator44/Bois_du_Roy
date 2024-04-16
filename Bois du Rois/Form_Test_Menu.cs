@@ -10,28 +10,30 @@ using System.Windows.Forms;
 
 namespace Bois_du_Rois
 {
-    public partial class Accueil : Form
+    public partial class Form_Test_Menu : Form
     {
-        public Accueil()
+        public Form_Test_Menu()
         {
             InitializeComponent();
         }
 
-        private void Bouton_Déroulant_Menu_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
-            if (Menu.Height == 262)
+            if (panel3.Height == 138)
             {
-                Menu.Height = 89;
+                panel3.Height = 46;
+
             }
             else
             {
-                Menu.Height = 262;
+                panel3.Height = 138;
             }
         }
 
-        private void Accueil_Load(object sender, EventArgs e)
+        private void Form_Test_Menu_Load(object sender, EventArgs e)
         {
-            Menu.Height = 89;
+            panel3.Height = 46;
         }
+
     }
 }

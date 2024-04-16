@@ -35,23 +35,18 @@
             this.lbl_msg_Bienvenue = new System.Windows.Forms.Label();
             this.btn_accueil = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.btn_ajout_fiche = new System.Windows.Forms.Button();
             this.btn_copier = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btn_exporter = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btn_deconnexion = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_compte = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_menu = new System.Windows.Forms.Button();
-            this.MenuDeroulant = new System.Windows.Forms.FlowLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Menu = new System.Windows.Forms.Panel();
+            this.Bouton_Déroulant_Menu = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel4.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.Menu.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_ndf_employés
@@ -136,15 +131,6 @@
             this.pictureBox2.TabIndex = 27;
             this.pictureBox2.TabStop = false;
             // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(0, -1);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1307, 89);
-            this.label2.TabIndex = 26;
-            // 
             // btn_ajout_fiche
             // 
             this.btn_ajout_fiche.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
@@ -195,90 +181,75 @@
             this.btn_exporter.Text = "Exporter";
             this.btn_exporter.UseVisualStyleBackColor = false;
             // 
-            // panel4
+            // label2
             // 
-            this.panel4.Controls.Add(this.btn_deconnexion);
-            this.panel4.Location = new System.Drawing.Point(1092, 173);
-            this.panel4.Margin = new System.Windows.Forms.Padding(0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(215, 74);
-            this.panel4.TabIndex = 36;
+            this.label2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label2.Location = new System.Drawing.Point(0, -1);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(1307, 89);
+            this.label2.TabIndex = 26;
             // 
-            // btn_deconnexion
+            // Menu
             // 
-            this.btn_deconnexion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.btn_deconnexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.btn_deconnexion.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_deconnexion.Location = new System.Drawing.Point(-17, -6);
-            this.btn_deconnexion.Margin = new System.Windows.Forms.Padding(0);
-            this.btn_deconnexion.Name = "btn_deconnexion";
-            this.btn_deconnexion.Size = new System.Drawing.Size(255, 85);
-            this.btn_deconnexion.TabIndex = 2;
-            this.btn_deconnexion.Text = "Déconnexion";
-            this.btn_deconnexion.UseVisualStyleBackColor = false;
+            this.Menu.BackColor = System.Drawing.Color.DimGray;
+            this.Menu.Controls.Add(this.button2);
+            this.Menu.Controls.Add(this.button1);
+            this.Menu.Controls.Add(this.Bouton_Déroulant_Menu);
+            this.Menu.Location = new System.Drawing.Point(1091, -1);
+            this.Menu.Name = "Menu";
+            this.Menu.Size = new System.Drawing.Size(216, 89);
+            this.Menu.TabIndex = 33;
             // 
-            // panel1
+            // Bouton_Déroulant_Menu
             // 
-            this.panel1.Controls.Add(this.btn_compte);
-            this.panel1.Location = new System.Drawing.Point(1092, 93);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(215, 74);
-            this.panel1.TabIndex = 34;
+            this.Bouton_Déroulant_Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Bouton_Déroulant_Menu.FlatAppearance.BorderSize = 0;
+            this.Bouton_Déroulant_Menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bouton_Déroulant_Menu.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.Bouton_Déroulant_Menu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Bouton_Déroulant_Menu.Location = new System.Drawing.Point(-3, 0);
+            this.Bouton_Déroulant_Menu.Name = "Bouton_Déroulant_Menu";
+            this.Bouton_Déroulant_Menu.Size = new System.Drawing.Size(219, 89);
+            this.Bouton_Déroulant_Menu.TabIndex = 0;
+            this.Bouton_Déroulant_Menu.Text = "Jean-Durand";
+            this.Bouton_Déroulant_Menu.UseVisualStyleBackColor = false;
+            this.Bouton_Déroulant_Menu.Click += new System.EventHandler(this.Bouton_Déroulant_Menu_Click);
             // 
-            // btn_compte
+            // button1
             // 
-            this.btn_compte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.btn_compte.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.btn_compte.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_compte.Location = new System.Drawing.Point(-22, -6);
-            this.btn_compte.Margin = new System.Windows.Forms.Padding(0);
-            this.btn_compte.Name = "btn_compte";
-            this.btn_compte.Size = new System.Drawing.Size(255, 85);
-            this.btn_compte.TabIndex = 2;
-            this.btn_compte.Text = "Compte";
-            this.btn_compte.UseVisualStyleBackColor = false;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F);
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(0, 92);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(216, 85);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Compte";
+            this.button1.UseVisualStyleBackColor = false;
             // 
-            // panel2
+            // button2
             // 
-            this.panel2.Controls.Add(this.btn_menu);
-            this.panel2.Location = new System.Drawing.Point(1092, -1);
-            this.panel2.Margin = new System.Windows.Forms.Padding(0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(215, 89);
-            this.panel2.TabIndex = 35;
-            // 
-            // btn_menu
-            // 
-            this.btn_menu.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_menu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.btn_menu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_menu.Location = new System.Drawing.Point(-17, -6);
-            this.btn_menu.Margin = new System.Windows.Forms.Padding(0);
-            this.btn_menu.Name = "btn_menu";
-            this.btn_menu.Size = new System.Drawing.Size(255, 101);
-            this.btn_menu.TabIndex = 2;
-            this.btn_menu.Text = "Jean-Durand";
-            this.btn_menu.UseVisualStyleBackColor = false;
-            this.btn_menu.Click += new System.EventHandler(this.btn_menu_Click);
-            // 
-            // MenuDeroulant
-            // 
-            this.MenuDeroulant.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.MenuDeroulant.Location = new System.Drawing.Point(1092, -1);
-            this.MenuDeroulant.Margin = new System.Windows.Forms.Padding(0);
-            this.MenuDeroulant.Name = "MenuDeroulant";
-            this.MenuDeroulant.Size = new System.Drawing.Size(215, 248);
-            this.MenuDeroulant.TabIndex = 33;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F);
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Location = new System.Drawing.Point(0, 180);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(216, 82);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Déconnexion";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // Accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1307, 672);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.Menu);
             this.Controls.Add(this.btn_exporter);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btn_copier);
@@ -290,15 +261,13 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbl_msg_Bienvenue);
-            this.Controls.Add(this.MenuDeroulant);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Accueil";
             this.Text = "Accueil";
+            this.Load += new System.EventHandler(this.Accueil_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
+            this.Menu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -311,17 +280,14 @@
         private System.Windows.Forms.Label lbl_msg_Bienvenue;
         private System.Windows.Forms.Button btn_accueil;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btn_ajout_fiche;
         private System.Windows.Forms.Button btn_copier;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btn_exporter;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button btn_deconnexion;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btn_compte;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btn_menu;
-        private System.Windows.Forms.FlowLayoutPanel MenuDeroulant;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel Menu;
+        private System.Windows.Forms.Button Bouton_Déroulant_Menu;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
