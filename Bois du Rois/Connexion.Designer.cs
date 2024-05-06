@@ -50,7 +50,7 @@
             this.txtLogin.Margin = new System.Windows.Forms.Padding(4);
             this.txtLogin.MaxLength = 5;
             this.txtLogin.Name = "txtLogin";
-            this.txtLogin.Size = new System.Drawing.Size(379, 20);
+            this.txtLogin.Size = new System.Drawing.Size(379, 22);
             this.txtLogin.TabIndex = 0;
             // 
             // txtMdp
@@ -61,7 +61,7 @@
             this.txtMdp.Location = new System.Drawing.Point(468, 387);
             this.txtMdp.Margin = new System.Windows.Forms.Padding(4);
             this.txtMdp.Name = "txtMdp";
-            this.txtMdp.Size = new System.Drawing.Size(379, 20);
+            this.txtMdp.Size = new System.Drawing.Size(379, 22);
             this.txtMdp.TabIndex = 1;
             this.txtMdp.UseSystemPasswordChar = true;
             // 
@@ -94,7 +94,7 @@
             this.lbl_login.Location = new System.Drawing.Point(370, 313);
             this.lbl_login.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_login.Name = "lbl_login";
-            this.lbl_login.Size = new System.Drawing.Size(59, 13);
+            this.lbl_login.Size = new System.Drawing.Size(69, 16);
             this.lbl_login.TabIndex = 3;
             this.lbl_login.Text = "Identifiant :";
             // 
@@ -107,7 +107,7 @@
             this.lbl_mdp.Location = new System.Drawing.Point(356, 391);
             this.lbl_mdp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_mdp.Name = "lbl_mdp";
-            this.lbl_mdp.Size = new System.Drawing.Size(78, 13);
+            this.lbl_mdp.Size = new System.Drawing.Size(96, 16);
             this.lbl_mdp.TabIndex = 4;
             this.lbl_mdp.Text = "Mot de Passe :";
             // 
@@ -117,7 +117,7 @@
             this.lbl_se_connecter.Location = new System.Drawing.Point(535, 207);
             this.lbl_se_connecter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_se_connecter.Name = "lbl_se_connecter";
-            this.lbl_se_connecter.Size = new System.Drawing.Size(221, 52);
+            this.lbl_se_connecter.Size = new System.Drawing.Size(265, 52);
             this.lbl_se_connecter.TabIndex = 5;
             this.lbl_se_connecter.Text = "Se connecter";
             // 
@@ -150,7 +150,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.label2.Location = new System.Drawing.Point(50, 24);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(201, 39);
+            this.label2.Size = new System.Drawing.Size(244, 48);
             this.label2.TabIndex = 26;
             this.label2.Text = "Bois du Roy";
             // 

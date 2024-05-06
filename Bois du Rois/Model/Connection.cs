@@ -14,10 +14,10 @@ namespace Bois_du_Rois.Model
     public class Connection
     {
         private MySqlConnection connexion;
-    private string server = "192.168.10.16";
-    private string database = "loubeyre_jrmy_BDD_Pendu";
-    private string uid = "loubeyre_jrmy";
-    private string password = "rI1tbBqD";
+        private string server = "192.168.10.16:8081";
+        private string database = "BDD_AP_BOIS_DU_ROY";
+        private string uid = "jloubeyre";
+        private string password = "rI1tbBqD";
 
     public MySqlConnection Connexion
     {
