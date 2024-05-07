@@ -37,7 +37,8 @@
             this.lbl_se_connecter = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbl_entete = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.Titre = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,7 +51,7 @@
             this.txtLogin.Margin = new System.Windows.Forms.Padding(4);
             this.txtLogin.MaxLength = 5;
             this.txtLogin.Name = "txtLogin";
-            this.txtLogin.Size = new System.Drawing.Size(379, 22);
+            this.txtLogin.Size = new System.Drawing.Size(379, 20);
             this.txtLogin.TabIndex = 0;
             // 
             // txtMdp
@@ -58,10 +59,11 @@
             this.txtMdp.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtMdp.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMdp.Location = new System.Drawing.Point(468, 387);
             this.txtMdp.Margin = new System.Windows.Forms.Padding(4);
             this.txtMdp.Name = "txtMdp";
-            this.txtMdp.Size = new System.Drawing.Size(379, 22);
+            this.txtMdp.Size = new System.Drawing.Size(379, 20);
             this.txtMdp.TabIndex = 1;
             this.txtMdp.UseSystemPasswordChar = true;
             // 
@@ -94,7 +96,7 @@
             this.lbl_login.Location = new System.Drawing.Point(370, 313);
             this.lbl_login.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_login.Name = "lbl_login";
-            this.lbl_login.Size = new System.Drawing.Size(69, 16);
+            this.lbl_login.Size = new System.Drawing.Size(59, 13);
             this.lbl_login.TabIndex = 3;
             this.lbl_login.Text = "Identifiant :";
             // 
@@ -107,7 +109,7 @@
             this.lbl_mdp.Location = new System.Drawing.Point(356, 391);
             this.lbl_mdp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_mdp.Name = "lbl_mdp";
-            this.lbl_mdp.Size = new System.Drawing.Size(96, 16);
+            this.lbl_mdp.Size = new System.Drawing.Size(78, 13);
             this.lbl_mdp.TabIndex = 4;
             this.lbl_mdp.Text = "Mot de Passe :";
             // 
@@ -142,17 +144,27 @@
             this.lbl_entete.Size = new System.Drawing.Size(1307, 89);
             this.lbl_entete.TabIndex = 23;
             // 
-            // label2
+            // Titre
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.DimGray;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label2.Location = new System.Drawing.Point(50, 24);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(244, 48);
-            this.label2.TabIndex = 26;
-            this.label2.Text = "Bois du Roy";
+            this.Titre.AutoSize = true;
+            this.Titre.BackColor = System.Drawing.Color.DimGray;
+            this.Titre.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Titre.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.Titre.Location = new System.Drawing.Point(50, 24);
+            this.Titre.Name = "Titre";
+            this.Titre.Size = new System.Drawing.Size(201, 39);
+            this.Titre.TabIndex = 26;
+            this.Titre.Text = "Bois du Roy";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(854, 385);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(77, 24);
+            this.button1.TabIndex = 27;
+            this.button1.Text = "Afficher";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Connexion
             // 
@@ -161,7 +173,8 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1307, 672);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Titre);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lbl_entete);
             this.Controls.Add(this.lbl_se_connecter);
@@ -190,7 +203,8 @@
         private System.Windows.Forms.Label lbl_se_connecter;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lbl_entete;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label Titre;
+        private System.Windows.Forms.Button button1;
     }
 }
 

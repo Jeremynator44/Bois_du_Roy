@@ -38,5 +38,19 @@ namespace Bois_du_Rois
             }
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           if (txtMdp.UseSystemPasswordChar == true)
+           {
+                txtMdp.UseSystemPasswordChar = false;
+                button1.Text = "Masquer";
+           }
+           else
+           {
+                txtMdp.UseSystemPasswordChar =  true;
+                button1.Text = "Afficher";
+           }
+        }
     }
 }

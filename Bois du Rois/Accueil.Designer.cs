@@ -37,7 +37,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btn_ajout_fiche = new System.Windows.Forms.Button();
             this.btn_copier = new System.Windows.Forms.Button();
-            this.dgvAccueil = new System.Windows.Forms.DataGridView();
+            this.dgv_Notes = new System.Windows.Forms.DataGridView();
             this.btn_exporter = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.Menu = new System.Windows.Forms.Panel();
@@ -46,7 +46,7 @@
             this.Bouton_Déroulant_Menu = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAccueil)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Notes)).BeginInit();
             this.Menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -58,10 +58,10 @@
             this.btn_ndf_employés.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ndf_employés.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ndf_employés.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_ndf_employés.Location = new System.Drawing.Point(655, -1);
-            this.btn_ndf_employés.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_ndf_employés.Location = new System.Drawing.Point(491, -1);
+            this.btn_ndf_employés.Margin = new System.Windows.Forms.Padding(2);
             this.btn_ndf_employés.Name = "btn_ndf_employés";
-            this.btn_ndf_employés.Size = new System.Drawing.Size(229, 110);
+            this.btn_ndf_employés.Size = new System.Drawing.Size(172, 89);
             this.btn_ndf_employés.TabIndex = 18;
             this.btn_ndf_employés.Text = "NDF Employés";
             this.btn_ndf_employés.UseVisualStyleBackColor = false;
@@ -73,10 +73,10 @@
             this.btn_liste_employés.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_liste_employés.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_liste_employés.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_liste_employés.Location = new System.Drawing.Point(928, -1);
-            this.btn_liste_employés.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_liste_employés.Location = new System.Drawing.Point(696, -1);
+            this.btn_liste_employés.Margin = new System.Windows.Forms.Padding(2);
             this.btn_liste_employés.Name = "btn_liste_employés";
-            this.btn_liste_employés.Size = new System.Drawing.Size(217, 110);
+            this.btn_liste_employés.Size = new System.Drawing.Size(163, 89);
             this.btn_liste_employés.TabIndex = 19;
             this.btn_liste_employés.Text = "Liste Employés";
             this.btn_liste_employés.UseVisualStyleBackColor = false;
@@ -88,10 +88,10 @@
             this.btn_liste_produits.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_liste_produits.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_liste_produits.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_liste_produits.Location = new System.Drawing.Point(1201, -1);
-            this.btn_liste_produits.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_liste_produits.Location = new System.Drawing.Point(901, -1);
+            this.btn_liste_produits.Margin = new System.Windows.Forms.Padding(2);
             this.btn_liste_produits.Name = "btn_liste_produits";
-            this.btn_liste_produits.Size = new System.Drawing.Size(199, 110);
+            this.btn_liste_produits.Size = new System.Drawing.Size(149, 89);
             this.btn_liste_produits.TabIndex = 20;
             this.btn_liste_produits.Text = "Liste Produits";
             this.btn_liste_produits.UseVisualStyleBackColor = false;
@@ -100,9 +100,10 @@
             // 
             this.lbl_msg_Bienvenue.AutoSize = true;
             this.lbl_msg_Bienvenue.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_msg_Bienvenue.Location = new System.Drawing.Point(196, 142);
+            this.lbl_msg_Bienvenue.Location = new System.Drawing.Point(147, 115);
+            this.lbl_msg_Bienvenue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_msg_Bienvenue.Name = "lbl_msg_Bienvenue";
-            this.lbl_msg_Bienvenue.Size = new System.Drawing.Size(757, 58);
+            this.lbl_msg_Bienvenue.Size = new System.Drawing.Size(599, 46);
             this.lbl_msg_Bienvenue.TabIndex = 23;
             this.lbl_msg_Bienvenue.Text = "Bienvenue Jean-Durand (E435) !\r\n";
             // 
@@ -113,10 +114,9 @@
             this.btn_accueil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_accueil.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_accueil.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_accueil.Location = new System.Drawing.Point(31, -1);
-            this.btn_accueil.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_accueil.Location = new System.Drawing.Point(23, -1);
             this.btn_accueil.Name = "btn_accueil";
-            this.btn_accueil.Size = new System.Drawing.Size(341, 110);
+            this.btn_accueil.Size = new System.Drawing.Size(256, 89);
             this.btn_accueil.TabIndex = 28;
             this.btn_accueil.Text = "Bois du Roy";
             this.btn_accueil.UseVisualStyleBackColor = false;
@@ -126,10 +126,10 @@
             this.pictureBox2.BackColor = System.Drawing.Color.DimGray;
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(344, -1);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(5);
+            this.pictureBox2.Location = new System.Drawing.Point(258, -1);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(164, 110);
+            this.pictureBox2.Size = new System.Drawing.Size(123, 89);
             this.pictureBox2.TabIndex = 27;
             this.pictureBox2.TabStop = false;
             // 
@@ -140,10 +140,9 @@
             this.btn_ajout_fiche.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ajout_fiche.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ajout_fiche.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_ajout_fiche.Location = new System.Drawing.Point(127, 261);
-            this.btn_ajout_fiche.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_ajout_fiche.Location = new System.Drawing.Point(95, 212);
             this.btn_ajout_fiche.Name = "btn_ajout_fiche";
-            this.btn_ajout_fiche.Size = new System.Drawing.Size(361, 52);
+            this.btn_ajout_fiche.Size = new System.Drawing.Size(271, 42);
             this.btn_ajout_fiche.TabIndex = 29;
             this.btn_ajout_fiche.Text = "+ Ajouter une nouvelle fiche";
             this.btn_ajout_fiche.UseVisualStyleBackColor = false;
@@ -155,23 +154,21 @@
             this.btn_copier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_copier.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_copier.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_copier.Location = new System.Drawing.Point(544, 261);
-            this.btn_copier.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_copier.Location = new System.Drawing.Point(408, 212);
             this.btn_copier.Name = "btn_copier";
-            this.btn_copier.Size = new System.Drawing.Size(199, 52);
+            this.btn_copier.Size = new System.Drawing.Size(149, 42);
             this.btn_copier.TabIndex = 30;
             this.btn_copier.Text = "Copier";
             this.btn_copier.UseVisualStyleBackColor = false;
             // 
-            // dgvAccueil
+            // dgv_Notes
             // 
-            this.dgvAccueil.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAccueil.Location = new System.Drawing.Point(127, 320);
-            this.dgvAccueil.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvAccueil.Name = "dgvAccueil";
-            this.dgvAccueil.RowHeadersWidth = 51;
-            this.dgvAccueil.Size = new System.Drawing.Size(1493, 471);
-            this.dgvAccueil.TabIndex = 31;
+            this.dgv_Notes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Notes.Location = new System.Drawing.Point(95, 267);
+            this.dgv_Notes.Name = "dgv_Notes";
+            this.dgv_Notes.RowHeadersWidth = 51;
+            this.dgv_Notes.Size = new System.Drawing.Size(1120, 381);
+            this.dgv_Notes.TabIndex = 31;
             // 
             // btn_exporter
             // 
@@ -180,10 +177,9 @@
             this.btn_exporter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_exporter.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_exporter.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_exporter.Location = new System.Drawing.Point(1421, 261);
-            this.btn_exporter.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_exporter.Location = new System.Drawing.Point(1066, 212);
             this.btn_exporter.Name = "btn_exporter";
-            this.btn_exporter.Size = new System.Drawing.Size(199, 52);
+            this.btn_exporter.Size = new System.Drawing.Size(149, 42);
             this.btn_exporter.TabIndex = 32;
             this.btn_exporter.Text = "Exporter";
             this.btn_exporter.UseVisualStyleBackColor = false;
@@ -192,9 +188,9 @@
             // 
             this.label2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label2.Location = new System.Drawing.Point(0, -1);
-            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1743, 110);
+            this.label2.Size = new System.Drawing.Size(1307, 89);
             this.label2.TabIndex = 26;
             // 
             // Menu
@@ -203,10 +199,9 @@
             this.Menu.Controls.Add(this.button2);
             this.Menu.Controls.Add(this.button1);
             this.Menu.Controls.Add(this.Bouton_Déroulant_Menu);
-            this.Menu.Location = new System.Drawing.Point(1455, -1);
-            this.Menu.Margin = new System.Windows.Forms.Padding(4);
+            this.Menu.Location = new System.Drawing.Point(1091, -1);
             this.Menu.Name = "Menu";
-            this.Menu.Size = new System.Drawing.Size(288, 110);
+            this.Menu.Size = new System.Drawing.Size(216, 89);
             this.Menu.TabIndex = 33;
             // 
             // button2
@@ -216,10 +211,9 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F);
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(0, 222);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(0, 180);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(288, 101);
+            this.button2.Size = new System.Drawing.Size(216, 82);
             this.button2.TabIndex = 2;
             this.button2.Text = "Déconnexion";
             this.button2.UseVisualStyleBackColor = false;
@@ -231,10 +225,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F);
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(0, 113);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(0, 92);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(288, 105);
+            this.button1.Size = new System.Drawing.Size(216, 85);
             this.button1.TabIndex = 1;
             this.button1.Text = "Compte";
             this.button1.UseVisualStyleBackColor = false;
@@ -246,10 +239,9 @@
             this.Bouton_Déroulant_Menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Bouton_Déroulant_Menu.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.Bouton_Déroulant_Menu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Bouton_Déroulant_Menu.Location = new System.Drawing.Point(-4, 0);
-            this.Bouton_Déroulant_Menu.Margin = new System.Windows.Forms.Padding(4);
+            this.Bouton_Déroulant_Menu.Location = new System.Drawing.Point(-3, 0);
             this.Bouton_Déroulant_Menu.Name = "Bouton_Déroulant_Menu";
-            this.Bouton_Déroulant_Menu.Size = new System.Drawing.Size(292, 110);
+            this.Bouton_Déroulant_Menu.Size = new System.Drawing.Size(219, 89);
             this.Bouton_Déroulant_Menu.TabIndex = 0;
             this.Bouton_Déroulant_Menu.Text = "Jean-Durand";
             this.Bouton_Déroulant_Menu.UseVisualStyleBackColor = false;
@@ -259,21 +251,22 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(1331, 261);
+            this.pictureBox1.Location = new System.Drawing.Point(998, 212);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(67, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(50, 41);
             this.pictureBox1.TabIndex = 34;
             this.pictureBox1.TabStop = false;
             // 
             // Accueil
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1743, 827);
+            this.ClientSize = new System.Drawing.Size(1307, 672);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Menu);
             this.Controls.Add(this.btn_exporter);
-            this.Controls.Add(this.dgvAccueil);
+            this.Controls.Add(this.dgv_Notes);
             this.Controls.Add(this.btn_copier);
             this.Controls.Add(this.btn_ajout_fiche);
             this.Controls.Add(this.btn_liste_produits);
@@ -283,12 +276,12 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbl_msg_Bienvenue);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Accueil";
             this.Text = "Accueil";
             this.Load += new System.EventHandler(this.Accueil_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAccueil)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Notes)).EndInit();
             this.Menu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -305,7 +298,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btn_ajout_fiche;
         private System.Windows.Forms.Button btn_copier;
-        private System.Windows.Forms.DataGridView dgvAccueil;
+        private System.Windows.Forms.DataGridView dgv_Notes;
         private System.Windows.Forms.Button btn_exporter;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel Menu;
