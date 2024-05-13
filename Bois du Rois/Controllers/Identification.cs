@@ -7,35 +7,110 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-using Bois_du_Rois;
+using System.Security.Cryptography;
+using BC = BCrypt.Net.BCrypt;
+using System.Net;
+using Org.BouncyCastle.Crypto.Macs;
 
 namespace Bois_du_Rois.Controllers
 {
     public class Identification
     {
         private Connection conn;
-        private DataTable dtUtilisateur;
 
-        public DataTable GetUtilisateur(TextBox txtLogin, TextBox txtMdp)
+        public bool VerifConnexion(string matricule, string mdp)
         {
             conn = new Connection();
-            dtUtilisateur = new DataTable();
-
-            try
+            bool verif = false;
+            if (matricule == "" || mdp == "") { }
+            else 
             {
-                using (MySqlCommand cmd = new MySqlCommand("SELECT MATRICULE, MDPCOMPTE FROM EMPLOYE WHERE MATRICULE = AND MDPCOMPTE = ;", conn.Connexion))
+                string rqtSql = "SELECT MATRICULE, MDPCOMPTE, NOM, PRENOM FROM EMPLOYE JOIN TYPEMETIER ON EMPLOYE.IDTYPEMETIER = TYPEMETIER.IDTYPEMETIER ";
+                rqtSql += " WHERE MATRICULE = @matricule AND NOMMETIER = 'Comptable';";
+                try
                 {
-                    conn.Connexion.Open();
-                    MySqlDataReader reader = cmd.ExecuteReader();
-                    dtUtilisateur.Load(reader);
+                    using (MySqlCommand cmd = new MySqlCommand(rqtSql, conn.Connexion))
+                    {
+                        cmd.Parameters.AddWithValue("@matricule", matricule);
+                        conn.Connexion.Open();
+                        MySqlDataReader reader = cmd.ExecuteReader();
+                        if (reader.HasRows)
+                        {
+                            string mdpHash = "";
+                            while (reader.Read())
+                            {
+                                mdpHash = reader["MDPCOMPTE"].ToString();
+                            }
+                            if (BC.Verify(mdp, mdpHash))
+                            {
+                                verif = true;
+                            }
+                        }
+                        reader.Close();
+                        conn.Connexion.Close();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    MessageBox.Show(ex.ToString(), "Erreur 3", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign, true);
                 }
             }
-            catch (Exception e)
-            {
-                MessageBox.Show(e.ToString(), "Erreur 3", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign, true);
-            }
-            return dtUtilisateur;
-
+            return verif;
         }
+        public string GetInfo(string matricule, string var)
+        {
+            conn = new Connection();
+
+            string rqtSql = "SELECT MATRICULE, MDPCOMPTE, NOM, PRENOM, DATENAISS, MATRICULE_ETRE_RESPONSABLE FROM EMPLOYE JOIN TYPEMETIER ON EMPLOYE.IDTYPEMETIER = TYPEMETIER.IDTYPEMETIER ";
+            rqtSql += " WHERE MATRICULE = @matricule AND NOMMETIER = 'Comptable';";
+            try
+            {
+                using (MySqlCommand cmd = new MySqlCommand(rqtSql, conn.Connexion))
+                {
+                    cmd.Parameters.AddWithValue("@matricule", matricule);
+                    conn.Connexion.Open();
+                    MySqlDataReader reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        if (var == "nom")
+                        {
+                            var = reader["NOM"].ToString();
+                        }
+                        if (var == "prenom")
+                        {
+                            var = reader["PRENOM"].ToString();
+                        }
+                        if (var == "dateNaiss")
+                        {
+                            var = reader["DATENAISS"].ToString();
+                        }
+                        if (var == "responsable")
+                        {
+                            if (reader["MATRICULE_ETRE_RESPONSABLE"].ToString() != "")
+                            {
+                                var = "";
+                            }
+                            else
+                            {
+                                var = reader["MATRICULE_ETRE_RESPONSABLE"].ToString();
+                            }
+                        }
+
+                    }
+                    reader.Close();
+                    conn.Connexion.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.ToString(), "Erreur 3", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign, true);
+            }
+            
+            return var;
+        }
+        
     }
 }
+

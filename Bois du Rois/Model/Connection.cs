@@ -16,7 +16,7 @@ namespace Bois_du_Rois.Model
     {
         private MySqlConnection connexion;
         private string server = "192.168.151.6";
-        private string database = "boisduroy";
+        private string database = "boisduroy(COMPLET)";
         private string uid = "jloubeyre";
         private string password = "rI1tbBqD";
 
@@ -38,7 +38,7 @@ namespace Bois_du_Rois.Model
         database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
         
 
-        connexion = new MySqlConnection(connectionString);
+        Connexion = new MySqlConnection(connectionString);
     }
 
     public Connection(string leServeur, string laDatabase, string leUid, string lePassword)

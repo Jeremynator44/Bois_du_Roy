@@ -7,19 +7,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Bois_du_Rois.Model;
+using Bois_du_Rois.Controllers;
+using System.Net;
+using System.Security.Cryptography;
+using MySql.Data.MySqlClient;
+using BC = BCrypt.Net.BCrypt;
 
 namespace Bois_du_Rois
 {
     public partial class Connexion : Form
     {
+        private string nom;
+        private string prenom;
+        private string dateNaiss;
+        private string responsable;
+
+
         public Connexion()
         {
             InitializeComponent();
-        }
-
-        private void Connexion_Load(object sender, EventArgs e)
-        {
-
+            nom = "nom";
+            prenom = "prenom";
+            dateNaiss = "dateNaiss";
+            responsable = "responsable";
         }
 
         private void btnConnexion_Click(object sender, EventArgs e)
@@ -37,8 +48,25 @@ namespace Bois_du_Rois
                 MessageBox.Show("Aucun mot de passe n'est rentré !", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
-        }
+            Identification identification = new Identification();
 
+            if (identification.VerifConnexion(txtLogin.Text, txtMdp.Text))
+            {
+                nom = identification.GetInfo(txtLogin.Text,  nom);
+                prenom = identification.GetInfo(txtLogin.Text, prenom);
+                dateNaiss = identification.GetInfo(txtLogin.Text, dateNaiss);
+                responsable = identification.GetInfo(txtLogin.Text, responsable);
+
+                FormPrincipal formprincipal = new FormPrincipal(txtLogin.Text, nom, prenom, dateNaiss, responsable);
+                formprincipal.Show();
+                this.Hide();
+
+            } else
+            {
+                MessageBox.Show("Votre mot de passe ou identifiant est incorrect !", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+        }
         private void button1_Click(object sender, EventArgs e)
         {
            if (txtMdp.UseSystemPasswordChar == true)

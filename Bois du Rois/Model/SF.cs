@@ -7,17 +7,16 @@ using System.Windows.Forms;
 
 namespace Bois_du_Rois
 {
-    public class SousFormulaire
+    public class SF
     {
 
         public Panel PanelSousFormlaire;
         public Form activeForm = null;
 
-        public SousFormulaire(Panel panelenvoit)
+        public SF(Panel panelenvoit)
         {
             PanelSousFormlaire = panelenvoit;
         }
-
         public void openChildForm(Form formEnfant)
         {
             if (activeForm != null)
@@ -32,7 +31,6 @@ namespace Bois_du_Rois
             formEnfant.BringToFront();
             formEnfant.Show();
         }
-
     }
 
 }
