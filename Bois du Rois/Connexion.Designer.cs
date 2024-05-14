@@ -38,7 +38,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbl_entete = new System.Windows.Forms.Label();
             this.Titre = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_Afficher_Masquer = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -152,16 +152,16 @@
             this.Titre.TabIndex = 26;
             this.Titre.Text = "Bois du Roy";
             // 
-            // button1
+            // btn_Afficher_Masquer
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.Location = new System.Drawing.Point(917, 360);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(77, 24);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "Afficher";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_Afficher_Masquer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btn_Afficher_Masquer.Location = new System.Drawing.Point(917, 360);
+            this.btn_Afficher_Masquer.Name = "btn_Afficher_Masquer";
+            this.btn_Afficher_Masquer.Size = new System.Drawing.Size(77, 24);
+            this.btn_Afficher_Masquer.TabIndex = 27;
+            this.btn_Afficher_Masquer.Text = "Afficher";
+            this.btn_Afficher_Masquer.UseVisualStyleBackColor = true;
+            this.btn_Afficher_Masquer.Click += new System.EventHandler(this.btn_Afficher_Masquer_Click);
             // 
             // Connexion
             // 
@@ -170,7 +170,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1307, 672);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_Afficher_Masquer);
             this.Controls.Add(this.Titre);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lbl_entete);
@@ -201,7 +201,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lbl_entete;
         private System.Windows.Forms.Label Titre;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_Afficher_Masquer;
     }
 }
 

@@ -52,7 +52,6 @@ namespace Bois_du_Rois.Controllers
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
                     MessageBox.Show(ex.ToString(), "Erreur 3", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign, true);
                 }
             }
@@ -60,10 +59,11 @@ namespace Bois_du_Rois.Controllers
         }
         public string GetInfo(string matricule, string var)
         {
-            conn = new Connection();
 
-            string rqtSql = "SELECT MATRICULE, MDPCOMPTE, NOM, PRENOM, DATENAISS, MATRICULE_ETRE_RESPONSABLE FROM EMPLOYE JOIN TYPEMETIER ON EMPLOYE.IDTYPEMETIER = TYPEMETIER.IDTYPEMETIER ";
+            conn = new Connection();
+            string rqtSql = "SELECT MATRICULE, MDPCOMPTE, NOM, PRENOM, DATENAISS, MATRICULE_ETRE_RESPONSABLE, DATEENTREE, DATESORTIE FROM EMPLOYE JOIN TYPEMETIER ON EMPLOYE.IDTYPEMETIER = TYPEMETIER.IDTYPEMETIER ";
             rqtSql += " WHERE MATRICULE = @matricule AND NOMMETIER = 'Comptable';";
+            
             try
             {
                 using (MySqlCommand cmd = new MySqlCommand(rqtSql, conn.Connexion))
@@ -96,6 +96,14 @@ namespace Bois_du_Rois.Controllers
                                 var = reader["MATRICULE_ETRE_RESPONSABLE"].ToString();
                             }
                         }
+                        if (var == "date entree")
+                        {
+                            var = reader["DATEENTREE"].ToString();
+                        }
+                        if (var == "date sortie")
+                        {
+                            var = reader["DATESORTIE"].ToString();
+                        }
 
                     }
                     reader.Close();
@@ -104,7 +112,6 @@ namespace Bois_du_Rois.Controllers
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
                 MessageBox.Show(ex.ToString(), "Erreur 3", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign, true);
             }
             

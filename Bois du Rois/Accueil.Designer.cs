@@ -30,9 +30,7 @@
         {
             this.lbl_prenom = new System.Windows.Forms.Label();
             this.btn_ajout_fiche = new System.Windows.Forms.Button();
-            this.btn_copier = new System.Windows.Forms.Button();
             this.dgv_Notes = new System.Windows.Forms.DataGridView();
-            this.btn_exporter = new System.Windows.Forms.Button();
             this.lbl_matricule = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Notes)).BeginInit();
             this.SuspendLayout();
@@ -63,21 +61,6 @@
             this.btn_ajout_fiche.UseVisualStyleBackColor = false;
             this.btn_ajout_fiche.Click += new System.EventHandler(this.btn_ajout_fiche_Click);
             // 
-            // btn_copier
-            // 
-            this.btn_copier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
-            this.btn_copier.FlatAppearance.BorderSize = 0;
-            this.btn_copier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_copier.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_copier.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_copier.Location = new System.Drawing.Point(573, 236);
-            this.btn_copier.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_copier.Name = "btn_copier";
-            this.btn_copier.Size = new System.Drawing.Size(199, 52);
-            this.btn_copier.TabIndex = 30;
-            this.btn_copier.Text = "Copier";
-            this.btn_copier.UseVisualStyleBackColor = false;
-            // 
             // dgv_Notes
             // 
             this.dgv_Notes.BackgroundColor = System.Drawing.SystemColors.Control;
@@ -89,21 +72,6 @@
             this.dgv_Notes.RowHeadersWidth = 51;
             this.dgv_Notes.Size = new System.Drawing.Size(1493, 480);
             this.dgv_Notes.TabIndex = 31;
-            // 
-            // btn_exporter
-            // 
-            this.btn_exporter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
-            this.btn_exporter.FlatAppearance.BorderSize = 0;
-            this.btn_exporter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_exporter.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_exporter.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_exporter.Location = new System.Drawing.Point(1450, 236);
-            this.btn_exporter.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_exporter.Name = "btn_exporter";
-            this.btn_exporter.Size = new System.Drawing.Size(199, 52);
-            this.btn_exporter.TabIndex = 32;
-            this.btn_exporter.Text = "Exporter";
-            this.btn_exporter.UseVisualStyleBackColor = false;
             // 
             // lbl_matricule
             // 
@@ -121,9 +89,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1942, 850);
             this.Controls.Add(this.lbl_matricule);
-            this.Controls.Add(this.btn_exporter);
             this.Controls.Add(this.dgv_Notes);
-            this.Controls.Add(this.btn_copier);
             this.Controls.Add(this.btn_ajout_fiche);
             this.Controls.Add(this.lbl_prenom);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -139,9 +105,7 @@
         #endregion
         private System.Windows.Forms.Label lbl_prenom;
         private System.Windows.Forms.Button btn_ajout_fiche;
-        private System.Windows.Forms.Button btn_copier;
         private System.Windows.Forms.DataGridView dgv_Notes;
-        private System.Windows.Forms.Button btn_exporter;
         private System.Windows.Forms.Label lbl_matricule;
     }
 }

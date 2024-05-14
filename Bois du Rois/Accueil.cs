@@ -44,6 +44,7 @@ namespace Bois_du_Rois
         private void btn_ajout_fiche_Click(object sender, EventArgs e)
         {
             Ajouts_Notes_de_Frais ajouts_notes_de_frais = new Ajouts_Notes_de_Frais(matricule);
+            ajouts_notes_de_frais.Location = new Point(-4, 106);
             ajouts_notes_de_frais.Show();
             this.Hide();
         }

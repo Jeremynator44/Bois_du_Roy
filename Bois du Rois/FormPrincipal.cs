@@ -25,7 +25,10 @@ namespace Bois_du_Rois
         private string matricule;
         private string dateNaiss;
         private string responsable;
-        public FormPrincipal(string Matricule, string Nom, string Prenom, string DateNaiss, string Responsable)
+        private string dateEntree;
+        private string dateSortie;
+
+        public FormPrincipal(string Matricule, string Nom, string Prenom, string DateNaiss, string Responsable ,string DateEntree, string DateSortie)
         {
             InitializeComponent();
             PrenomNom = Nom + " " + Prenom;
@@ -34,6 +37,9 @@ namespace Bois_du_Rois
             matricule = Matricule;
             dateNaiss = DateNaiss;
             responsable = Responsable;
+            dateEntree = DateEntree;
+            dateSortie = DateSortie;
+
             Bouton_Déroulant_Menu.Text = PrenomNom;
 
 
@@ -71,7 +77,7 @@ namespace Bois_du_Rois
         }
         private void btn_liste_employés_Click(object sender, EventArgs e)
         {
-            SousF.openChildForm(new Liste_Employés());
+            SousF.openChildForm(new Liste_Employés(matricule, nom, prenom, dateNaiss, responsable, dateEntree, dateSortie));
         }
 
         private void btn_liste_produits_Click(object sender, EventArgs e)

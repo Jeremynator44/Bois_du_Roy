@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_matricule = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,20 +38,23 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
+            this.numUpDown_Frais_Kilometrique = new System.Windows.Forms.NumericUpDown();
+            this.numUpDown_Repas_Midi = new System.Windows.Forms.NumericUpDown();
+            this.numUpDown_Repas_Soir = new System.Windows.Forms.NumericUpDown();
+            this.numUpDown_Soir_hors_Paris = new System.Windows.Forms.NumericUpDown();
+            this.numUpDown_Soir_Paris = new System.Windows.Forms.NumericUpDown();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.btn_Annulation = new System.Windows.Forms.Button();
             this.btn_Ajout_Fiche = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
+            this.Calendar_Date = new System.Windows.Forms.MonthCalendar();
+            this.txt_Date = new System.Windows.Forms.TextBox();
+            this.btn_Afficher_Masquer = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDown_Frais_Kilometrique)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDown_Repas_Midi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDown_Repas_Soir)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDown_Soir_hors_Paris)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDown_Soir_Paris)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -64,13 +66,6 @@
             this.label1.Size = new System.Drawing.Size(64, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Date :";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(699, 162);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(233, 22);
-            this.dateTimePicker1.TabIndex = 1;
             // 
             // label2
             // 
@@ -162,45 +157,45 @@
             this.label9.TabIndex = 10;
             this.label9.Text = "Soir  à Paris :";
             // 
-            // numericUpDown1
+            // numUpDown_Frais_Kilometrique
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(799, 459);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(190, 22);
-            this.numericUpDown1.TabIndex = 11;
-            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numUpDown_Frais_Kilometrique.Location = new System.Drawing.Point(799, 459);
+            this.numUpDown_Frais_Kilometrique.Name = "numUpDown_Frais_Kilometrique";
+            this.numUpDown_Frais_Kilometrique.Size = new System.Drawing.Size(190, 22);
+            this.numUpDown_Frais_Kilometrique.TabIndex = 11;
+            this.numUpDown_Frais_Kilometrique.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // numericUpDown2
+            // numUpDown_Repas_Midi
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(799, 512);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(190, 22);
-            this.numericUpDown2.TabIndex = 12;
-            this.numericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numUpDown_Repas_Midi.Location = new System.Drawing.Point(799, 512);
+            this.numUpDown_Repas_Midi.Name = "numUpDown_Repas_Midi";
+            this.numUpDown_Repas_Midi.Size = new System.Drawing.Size(190, 22);
+            this.numUpDown_Repas_Midi.TabIndex = 12;
+            this.numUpDown_Repas_Midi.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // numericUpDown3
+            // numUpDown_Repas_Soir
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(799, 566);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(190, 22);
-            this.numericUpDown3.TabIndex = 13;
-            this.numericUpDown3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numUpDown_Repas_Soir.Location = new System.Drawing.Point(799, 566);
+            this.numUpDown_Repas_Soir.Name = "numUpDown_Repas_Soir";
+            this.numUpDown_Repas_Soir.Size = new System.Drawing.Size(190, 22);
+            this.numUpDown_Repas_Soir.TabIndex = 13;
+            this.numUpDown_Repas_Soir.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // numericUpDown4
+            // numUpDown_Soir_hors_Paris
             // 
-            this.numericUpDown4.Location = new System.Drawing.Point(799, 618);
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(190, 22);
-            this.numericUpDown4.TabIndex = 14;
-            this.numericUpDown4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numUpDown_Soir_hors_Paris.Location = new System.Drawing.Point(799, 618);
+            this.numUpDown_Soir_hors_Paris.Name = "numUpDown_Soir_hors_Paris";
+            this.numUpDown_Soir_hors_Paris.Size = new System.Drawing.Size(190, 22);
+            this.numUpDown_Soir_hors_Paris.TabIndex = 14;
+            this.numUpDown_Soir_hors_Paris.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // numericUpDown5
+            // numUpDown_Soir_Paris
             // 
-            this.numericUpDown5.Location = new System.Drawing.Point(799, 671);
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(190, 22);
-            this.numericUpDown5.TabIndex = 15;
-            this.numericUpDown5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numUpDown_Soir_Paris.Location = new System.Drawing.Point(799, 671);
+            this.numUpDown_Soir_Paris.Name = "numUpDown_Soir_Paris";
+            this.numUpDown_Soir_Paris.Size = new System.Drawing.Size(190, 22);
+            this.numUpDown_Soir_Paris.TabIndex = 15;
+            this.numUpDown_Soir_Paris.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label11
             // 
@@ -262,23 +257,55 @@
             this.btn_Ajout_Fiche.TabIndex = 20;
             this.btn_Ajout_Fiche.Text = "Ajouter la Fiche";
             this.btn_Ajout_Fiche.UseVisualStyleBackColor = false;
+            this.btn_Ajout_Fiche.Click += new System.EventHandler(this.btn_Ajout_Fiche_Click);
+            // 
+            // Calendar_Date
+            // 
+            this.Calendar_Date.Location = new System.Drawing.Point(1056, 82);
+            this.Calendar_Date.Name = "Calendar_Date";
+            this.Calendar_Date.TabIndex = 21;
+            this.Calendar_Date.Visible = false;
+            this.Calendar_Date.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.Calendar_Date_DateChanged);
+            // 
+            // txt_Date
+            // 
+            this.txt_Date.Enabled = false;
+            this.txt_Date.Location = new System.Drawing.Point(699, 163);
+            this.txt_Date.Name = "txt_Date";
+            this.txt_Date.ReadOnly = true;
+            this.txt_Date.Size = new System.Drawing.Size(233, 22);
+            this.txt_Date.TabIndex = 22;
+            this.txt_Date.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btn_Afficher_Masquer
+            // 
+            this.btn_Afficher_Masquer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btn_Afficher_Masquer.Location = new System.Drawing.Point(938, 163);
+            this.btn_Afficher_Masquer.Name = "btn_Afficher_Masquer";
+            this.btn_Afficher_Masquer.Size = new System.Drawing.Size(77, 24);
+            this.btn_Afficher_Masquer.TabIndex = 28;
+            this.btn_Afficher_Masquer.Text = "Afficher";
+            this.btn_Afficher_Masquer.UseVisualStyleBackColor = true;
+            this.btn_Afficher_Masquer.Click += new System.EventHandler(this.btn_Afficher_Masquer_Click);
             // 
             // Ajouts_Notes_de_Frais
             // 
-            this.AccessibleRole = System.Windows.Forms.AccessibleRole.Alert;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.ClientSize = new System.Drawing.Size(1924, 803);
+            this.Controls.Add(this.btn_Afficher_Masquer);
+            this.Controls.Add(this.txt_Date);
+            this.Controls.Add(this.Calendar_Date);
             this.Controls.Add(this.btn_Ajout_Fiche);
             this.Controls.Add(this.btn_Annulation);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.numericUpDown5);
-            this.Controls.Add(this.numericUpDown4);
-            this.Controls.Add(this.numericUpDown3);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.numUpDown_Soir_Paris);
+            this.Controls.Add(this.numUpDown_Soir_hors_Paris);
+            this.Controls.Add(this.numUpDown_Repas_Soir);
+            this.Controls.Add(this.numUpDown_Repas_Midi);
+            this.Controls.Add(this.numUpDown_Frais_Kilometrique);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -288,17 +315,16 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txt_matricule);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Location = new System.Drawing.Point(-4, 106);
             this.Name = "Ajouts_Notes_de_Frais";
             this.Text = "Ajouts_Notes_de_Frais";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDown_Frais_Kilometrique)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDown_Repas_Midi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDown_Repas_Soir)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDown_Soir_hors_Paris)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDown_Soir_Paris)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -307,7 +333,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_matricule;
         private System.Windows.Forms.Label label3;
@@ -317,14 +342,17 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
-        private System.Windows.Forms.NumericUpDown numericUpDown5;
+        private System.Windows.Forms.NumericUpDown numUpDown_Frais_Kilometrique;
+        private System.Windows.Forms.NumericUpDown numUpDown_Repas_Midi;
+        private System.Windows.Forms.NumericUpDown numUpDown_Repas_Soir;
+        private System.Windows.Forms.NumericUpDown numUpDown_Soir_hors_Paris;
+        private System.Windows.Forms.NumericUpDown numUpDown_Soir_Paris;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btn_Annulation;
         private System.Windows.Forms.Button btn_Ajout_Fiche;
+        private System.Windows.Forms.MonthCalendar Calendar_Date;
+        private System.Windows.Forms.TextBox txt_Date;
+        private System.Windows.Forms.Button btn_Afficher_Masquer;
     }
 }

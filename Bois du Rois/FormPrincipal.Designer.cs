@@ -193,7 +193,7 @@
             // 
             this.panelSF.Location = new System.Drawing.Point(-4, 106);
             this.panelSF.Name = "panelSF";
-            this.panelSF.Size = new System.Drawing.Size(2057, 850);
+            this.panelSF.Size = new System.Drawing.Size(1942, 850);
             this.panelSF.TabIndex = 41;
             // 
             // FormPrincipal

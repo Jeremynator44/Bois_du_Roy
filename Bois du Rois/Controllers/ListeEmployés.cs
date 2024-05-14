@@ -33,7 +33,6 @@ namespace Bois_du_Rois.Controllers
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.Message);
                 MessageBox.Show(e.ToString(), "Erreur 3", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign, true);
             }
             return dtListeEmployés;

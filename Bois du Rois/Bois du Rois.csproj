@@ -116,6 +116,24 @@
     <Compile Include="Ajouts_Notes_de_Frais.Designer.cs">
       <DependentUpon>Ajouts_Notes_de_Frais.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ajout_Employé.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajout_Employé.Designer.cs">
+      <DependentUpon>Ajout_Employé.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajout_Produit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajout_Produit.Designer.cs">
+      <DependentUpon>Ajout_Produit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attribution_MDP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attribution_MDP.Designer.cs">
+      <DependentUpon>Attribution_MDP.cs</DependentUpon>
+    </Compile>
     <Compile Include="Compte.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +183,18 @@
     </Compile>
     <Compile Include="Model\Connection.cs" />
     <Compile Include="Model\SF.cs" />
+    <Compile Include="Modif_Employé.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modif_Employé.Designer.cs">
+      <DependentUpon>Modif_Employé.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modif_Produit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modif_Produit.Designer.cs">
+      <DependentUpon>Modif_Produit.cs</DependentUpon>
+    </Compile>
     <Compile Include="NDF_Employé.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,6 +208,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ajouts_Notes_de_Frais.resx">
       <DependentUpon>Ajouts_Notes_de_Frais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajout_Employé.resx">
+      <DependentUpon>Ajout_Employé.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajout_Produit.resx">
+      <DependentUpon>Ajout_Produit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attribution_MDP.resx">
+      <DependentUpon>Attribution_MDP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Compte.resx">
       <DependentUpon>Compte.cs</DependentUpon>
@@ -196,6 +235,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Liste_Produits.resx">
       <DependentUpon>Liste_Produits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modif_Employé.resx">
+      <DependentUpon>Modif_Employé.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modif_Produit.resx">
+      <DependentUpon>Modif_Produit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NDF_Employé.resx">
       <DependentUpon>NDF_Employé.cs</DependentUpon>

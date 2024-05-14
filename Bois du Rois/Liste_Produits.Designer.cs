@@ -28,15 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Liste_Produits));
             this.lbl_liste_employes = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_exporter = new System.Windows.Forms.Button();
             this.dgv_Liste_Produits = new System.Windows.Forms.DataGridView();
-            this.btn_copier = new System.Windows.Forms.Button();
-            this.btn_ajout_fiche = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Menu_Produit = new System.Windows.Forms.Panel();
+            this.btn_ajout_produit = new System.Windows.Forms.Button();
+            this.btn_modifier = new System.Windows.Forms.Button();
+            this.Bouton_Déroulant_Produit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Liste_Produits)).BeginInit();
+            this.Menu_Produit.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbl_liste_employes
@@ -48,32 +47,6 @@
             this.lbl_liste_employes.Size = new System.Drawing.Size(449, 58);
             this.lbl_liste_employes.TabIndex = 52;
             this.lbl_liste_employes.Text = "Liste des Produits :";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(1355, 237);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(67, 50);
-            this.pictureBox1.TabIndex = 51;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btn_exporter
-            // 
-            this.btn_exporter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
-            this.btn_exporter.FlatAppearance.BorderSize = 0;
-            this.btn_exporter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_exporter.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_exporter.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_exporter.Location = new System.Drawing.Point(1445, 237);
-            this.btn_exporter.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_exporter.Name = "btn_exporter";
-            this.btn_exporter.Size = new System.Drawing.Size(199, 52);
-            this.btn_exporter.TabIndex = 50;
-            this.btn_exporter.Text = "Exporter";
-            this.btn_exporter.UseVisualStyleBackColor = false;
             // 
             // dgv_Liste_Produits
             // 
@@ -87,52 +60,79 @@
             this.dgv_Liste_Produits.Size = new System.Drawing.Size(1493, 480);
             this.dgv_Liste_Produits.TabIndex = 49;
             // 
-            // btn_copier
+            // Menu_Produit
             // 
-            this.btn_copier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
-            this.btn_copier.FlatAppearance.BorderSize = 0;
-            this.btn_copier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_copier.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_copier.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_copier.Location = new System.Drawing.Point(568, 237);
-            this.btn_copier.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_copier.Name = "btn_copier";
-            this.btn_copier.Size = new System.Drawing.Size(199, 52);
-            this.btn_copier.TabIndex = 48;
-            this.btn_copier.Text = "Copier";
-            this.btn_copier.UseVisualStyleBackColor = false;
+            this.Menu_Produit.BackColor = System.Drawing.SystemColors.Control;
+            this.Menu_Produit.Controls.Add(this.btn_ajout_produit);
+            this.Menu_Produit.Controls.Add(this.btn_modifier);
+            this.Menu_Produit.Controls.Add(this.Bouton_Déroulant_Produit);
+            this.Menu_Produit.Location = new System.Drawing.Point(151, 237);
+            this.Menu_Produit.Margin = new System.Windows.Forms.Padding(4);
+            this.Menu_Produit.Name = "Menu_Produit";
+            this.Menu_Produit.Size = new System.Drawing.Size(361, 52);
+            this.Menu_Produit.TabIndex = 53;
             // 
-            // btn_ajout_fiche
+            // btn_ajout_produit
             // 
-            this.btn_ajout_fiche.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
-            this.btn_ajout_fiche.FlatAppearance.BorderSize = 0;
-            this.btn_ajout_fiche.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ajout_fiche.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ajout_fiche.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_ajout_fiche.Location = new System.Drawing.Point(151, 237);
-            this.btn_ajout_fiche.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_ajout_fiche.Name = "btn_ajout_fiche";
-            this.btn_ajout_fiche.Size = new System.Drawing.Size(361, 52);
-            this.btn_ajout_fiche.TabIndex = 47;
-            this.btn_ajout_fiche.Text = "+ Ajouter une nouvelle fiche";
-            this.btn_ajout_fiche.UseVisualStyleBackColor = false;
+            this.btn_ajout_produit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.btn_ajout_produit.FlatAppearance.BorderSize = 0;
+            this.btn_ajout_produit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ajout_produit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ajout_produit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_ajout_produit.Location = new System.Drawing.Point(0, 120);
+            this.btn_ajout_produit.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_ajout_produit.Name = "btn_ajout_produit";
+            this.btn_ajout_produit.Size = new System.Drawing.Size(361, 52);
+            this.btn_ajout_produit.TabIndex = 44;
+            this.btn_ajout_produit.Text = "Ajouter Produit";
+            this.btn_ajout_produit.UseVisualStyleBackColor = false;
+            this.btn_ajout_produit.Click += new System.EventHandler(this.btn_ajout_produit_Click);
+            // 
+            // btn_modifier
+            // 
+            this.btn_modifier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.btn_modifier.FlatAppearance.BorderSize = 0;
+            this.btn_modifier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_modifier.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_modifier.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_modifier.Location = new System.Drawing.Point(0, 60);
+            this.btn_modifier.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_modifier.Name = "btn_modifier";
+            this.btn_modifier.Size = new System.Drawing.Size(361, 52);
+            this.btn_modifier.TabIndex = 42;
+            this.btn_modifier.Text = "Modifier";
+            this.btn_modifier.UseVisualStyleBackColor = false;
+            this.btn_modifier.Click += new System.EventHandler(this.btn_modifier_Click);
+            // 
+            // Bouton_Déroulant_Produit
+            // 
+            this.Bouton_Déroulant_Produit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.Bouton_Déroulant_Produit.FlatAppearance.BorderSize = 0;
+            this.Bouton_Déroulant_Produit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bouton_Déroulant_Produit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bouton_Déroulant_Produit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Bouton_Déroulant_Produit.Location = new System.Drawing.Point(0, 0);
+            this.Bouton_Déroulant_Produit.Margin = new System.Windows.Forms.Padding(4);
+            this.Bouton_Déroulant_Produit.Name = "Bouton_Déroulant_Produit";
+            this.Bouton_Déroulant_Produit.Size = new System.Drawing.Size(361, 52);
+            this.Bouton_Déroulant_Produit.TabIndex = 41;
+            this.Bouton_Déroulant_Produit.Text = "Gestion des Produits";
+            this.Bouton_Déroulant_Produit.UseVisualStyleBackColor = false;
+            this.Bouton_Déroulant_Produit.Click += new System.EventHandler(this.Bouton_Déroulant_Produit_Click);
             // 
             // Liste_Produits
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1942, 850);
+            this.Controls.Add(this.Menu_Produit);
             this.Controls.Add(this.lbl_liste_employes);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btn_exporter);
             this.Controls.Add(this.dgv_Liste_Produits);
-            this.Controls.Add(this.btn_copier);
-            this.Controls.Add(this.btn_ajout_fiche);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Liste_Produits";
             this.Text = "Liste_Produits";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Liste_Produits)).EndInit();
+            this.Menu_Produit.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -141,10 +141,10 @@
         #endregion
 
         private System.Windows.Forms.Label lbl_liste_employes;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btn_exporter;
         private System.Windows.Forms.DataGridView dgv_Liste_Produits;
-        private System.Windows.Forms.Button btn_copier;
-        private System.Windows.Forms.Button btn_ajout_fiche;
+        private System.Windows.Forms.Panel Menu_Produit;
+        private System.Windows.Forms.Button btn_ajout_produit;
+        private System.Windows.Forms.Button btn_modifier;
+        private System.Windows.Forms.Button Bouton_Déroulant_Produit;
     }
 }

@@ -22,6 +22,9 @@ namespace Bois_du_Rois
         private string prenom;
         private string dateNaiss;
         private string responsable;
+        private string dateEntree;
+        private string dateSortie;
+
 
 
         public Connexion()
@@ -31,6 +34,8 @@ namespace Bois_du_Rois
             prenom = "prenom";
             dateNaiss = "dateNaiss";
             responsable = "responsable";
+            dateEntree = "date entree";
+            dateSortie = "date sortie";
         }
 
         private void btnConnexion_Click(object sender, EventArgs e)
@@ -56,8 +61,11 @@ namespace Bois_du_Rois
                 prenom = identification.GetInfo(txtLogin.Text, prenom);
                 dateNaiss = identification.GetInfo(txtLogin.Text, dateNaiss);
                 responsable = identification.GetInfo(txtLogin.Text, responsable);
+                dateEntree = identification.GetInfo(txtLogin.Text, dateEntree);
+                dateSortie = identification.GetInfo(txtLogin.Text, dateSortie);
 
-                FormPrincipal formprincipal = new FormPrincipal(txtLogin.Text, nom, prenom, dateNaiss, responsable);
+
+                FormPrincipal formprincipal = new FormPrincipal(txtLogin.Text, nom, prenom, dateNaiss, responsable, dateEntree, dateSortie);
                 formprincipal.Show();
                 this.Hide();
 
@@ -67,17 +75,17 @@ namespace Bois_du_Rois
             }
 
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_Afficher_Masquer_Click(object sender, EventArgs e)
         {
            if (txtMdp.UseSystemPasswordChar == true)
            {
                 txtMdp.UseSystemPasswordChar = false;
-                button1.Text = "Masquer";
+                btn_Afficher_Masquer.Text = "Masquer";
            }
            else
            {
                 txtMdp.UseSystemPasswordChar =  true;
-                button1.Text = "Afficher";
+                btn_Afficher_Masquer.Text = "Afficher";
            }
         }
     }
